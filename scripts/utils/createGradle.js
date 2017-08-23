@@ -10,10 +10,10 @@
 'use strict';
 
 const spawn = require('react-dev-utils/crossSpawn');
-
+// const paths = require('../../config/paths');
 
 module.exports = () => {
-  const cmd = './gradlew';
+  const cmd = './node_modules/kotlin-scripts/gradlew';
   const args = ['-t', 'build'];
 
   return {

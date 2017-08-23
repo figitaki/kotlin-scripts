@@ -9,6 +9,9 @@
 # production
 /build
 
+# gradle
+.gradle
+
 # misc
 .DS_Store
 .env.local
