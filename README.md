@@ -7,6 +7,9 @@ $ yarn create react-app my-app -- --scripts-version kotlin-scripts
 Kotlin Scripts provides a JS-like development environment for developing web apps with the [Kotlin](https://kotlin-lang.org/) programming language and [React](https://react.facebook.io/). It bootstraps an environment to automatically compile all Kotlin code to JS, provide features like reloading and bundling, and seamlessly use JS code from Kotlin.
 
 [![Build Status](https://travis-ci.org/figitaki/kotlin-scripts.svg?branch=master)](https://travis-ci.org/figitaki/kotlin-scripts)
+[![npm](https://img.shields.io/npm/v/kotlin-scripts.svg)](https://www.npmjs.com/package/kotlin-scripts)
+[![npm](https://img.shields.io/npm/l/kotlin-scripts.svg)]()
+[![David](https://img.shields.io/david/figitaki/kotlin-scripts.svg)]()
 
 ## Getting Started
 
