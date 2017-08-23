@@ -149,6 +149,7 @@ module.exports = {
           },
         ],
         include: paths.appSrc,
+        exclude: paths.appIndexJs,
       },
       {
         // "oneOf" will traverse all following loaders until one will
