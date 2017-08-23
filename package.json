@@ -1,6 +1,6 @@
 {
   "name": "kotlin-scripts",
-  "version": "0.0.3-beta.1",
+  "version": "0.0.3-beta.2",
   "description": "Configuration and scripts for Create React App with Kotlin.",
   "repository": "figitaki/kotlin-scripts",
   "license": "BSD-3-Clause",
