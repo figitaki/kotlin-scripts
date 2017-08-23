@@ -18,5 +18,6 @@ module.exports = () => {
 
   return {
     start: () => spawn(cmd, args, { stdio: 'inherit' }),
+    run: () => spawn.sync(cmd, ['build'], { stdio: 'inherit' })
   };
 };

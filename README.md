@@ -1,9 +1,9 @@
 # Kotlin Scripts
 
 [![Build Status](https://travis-ci.org/figitaki/kotlin-scripts.svg?branch=master)](https://travis-ci.org/figitaki/kotlin-scripts)
+[![David](https://img.shields.io/david/figitaki/kotlin-scripts.svg)]()
 [![npm](https://img.shields.io/npm/v/kotlin-scripts.svg)](https://www.npmjs.com/package/kotlin-scripts)
 [![npm](https://img.shields.io/npm/l/kotlin-scripts.svg)]()
-[![David](https://img.shields.io/david/figitaki/kotlin-scripts.svg)]()
 
 ```
 $ yarn create react-app my-app -- --scripts-version kotlin-scripts
