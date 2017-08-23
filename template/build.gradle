@@ -1,10 +1,9 @@
-group 'org.example'
-version '1.0-SNAPSHOT'
-
 buildscript {
-    ext.kotlin_version = '1.1.4'
+    ext.kotlin_version = '1.1.1'
     repositories {
-        mavenCentral()
+        mavenLocal()
+        jcenter()
+        maven { url "http://dl.bintray.com/kotlin/kotlin-eap" }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -14,14 +13,26 @@ buildscript {
 apply plugin: 'kotlin2js'
 
 repositories {
-  mavenCentral()
+    mavenLocal()
+    jcenter()
+    maven { url "http://dl.bintray.com/kotlin/kotlinx.html" }
 }
 
 dependencies {
-  compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    compile("org.jetbrains.kotlinx:kotlinx-html-js:0.6.4")
+}
+
+sourceSets {
+    main.kotlin.srcDirs += 'src/main/kotlin'
+    main.kotlin.srcDirs += 'lib/react/kotlin'
+    main.kotlin.srcDirs += 'lib/common/kotlin'
 }
 
 compileKotlin2Js.kotlinOptions {
-  moduleKind = "commonjs"
-  outputFile = "build/index.js"
+    metaInfo = true
+    outputFile = "build/js/main.js"
+    sourceMap = true
+    moduleKind = 'commonjs'
+    main = "call"
 }
